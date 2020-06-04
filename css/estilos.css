@@ -8,11 +8,15 @@
 
 /* fundo da pagina */
 body {
-  background-image: url('../img/primeira_flor1.jpg');
+  background:	linear-gradient(gray,white);
   background-size: auto 100vh; 
   font-family: 'Source Code Pro', monospace;
   height: 100vh;
   font-size: 10px;
+}
+
+.home{
+  background-image: url('../img/primeira_flor1.jpg');
 }
 
 /* definindo o tamanho minimo para ser carregado de tela */
@@ -136,11 +140,9 @@ a:hover {
  font-family: 'Montserrat', sans-serif;
 }
 
-.sobre,
 .portfolio{
   padding: 2em;
-  min-height: 100vh;
-  background: purple;
+  min-height: 50vh;
 }
 
 @media  (min-width: 1200px){
@@ -163,26 +165,18 @@ a:hover {
 .grid{
   display: grid;
   /* colocando espacamento entre os grids */
-  gap: 10em;
-  text-align: center;
-}
+}  
 
-@media (min-width: 560px) {
+@media (min-width: 400px) {
   .grid{
     /* colocando as colunas da tela */
-    grid-template-columns: repeat(2, 240px);
+    grid-template-columns: repeat(2, 130px);
     justify-content: center;
-    gap: 7em;
-  }
-}
-
-@media (min-width: 892px) {
-  .grid{
-    /* colocando as colunas da tela */
-    grid-template-columns: repeat(3, 240px);
-    justify-content: center;
-    height: calc(100vh - 4em - 48px - 1.8em);
     gap: 2em;
+  }
+  .flip-card{
+    padding-bottom: 90px;
+    margin-bottom: 70px  ;
   }
 }
 .sobre p{
@@ -206,6 +200,11 @@ a:hover {
 }
 }
 
+.ultimo{
+  margin-bottom: 0px;
+  text-indent: ;
+}
+
 /* deixando as imagens centralizado pelo texto */
 .portfolio figure{
   text-align: center;
@@ -217,12 +216,14 @@ a:hover {
   width: 120px;
   border-radius: 10%;  
 }
+
 @media(min-width: 600px){
   .foto-minha{
     height: 120px;
     width: 150px;
   }
 }
+
 @media(min-width: 800px){
 .foto-minha{
   height: 180px;
@@ -251,12 +252,12 @@ a:hover {
 .grid{
   gap: 2em;
 }
-.flip-card{
-margin-bottom: 240px;
-background-color: purple;
+.sobre,
+.portfolio{
+  
 }
 }
-}
+
 
 .foto-minha{
   display: flex;
