@@ -14,14 +14,14 @@ body {
   font-size: 10px;
 }
 
-.home{
-  background-image: url(../img/primeira_flor1.jpg);
+@media (min-width: 1000px){
+  body{
+    font-size: 16px;
+  }
 }
 
-@media (min-width: 700px){
-  .home{
-    background-color: gray;
-  }
+.home{
+  background-image: url(../img/primeira_flor1.jpg);
 }
 
 /* definindo o tamanho minimo para ser carregado de tela */
@@ -33,41 +33,6 @@ body {
   
 }
 
-@media (min-width: 600px){
-  body{
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 800px){
-  body{
-    font-size: 22px;
-  }
-}
-
-@media (min-width: 1000px){
-  body{
-    font-size: 26px;
-  }
-}
-
-@media (min-width: 1400px){
-  body{
-    font-size: 34px;
-  }
-}
-
-@media (min-width: 1800px){
-  body{
-    font-size: 42px;
-  }
-}
-
-@media (min-width: 2200px){
-  body{
-    font-size: 50px;
-  }
-}
 
 /* modificando a tag header para poder deixar o site com uma movimentação massa */
 header{
@@ -96,12 +61,19 @@ header{
 /* dentro de um li de um ul de um menu esta sendo modificado */
 .menu li {
  list-style: none; 
+ font-size: 16px;
 }
 
 /* deixando a area de link maior */
 .menu a{
   display: block;
   padding: 0px 45px;
+}
+
+@media (min-width: 1000px){
+  .menu li{
+    font-size: 24px;
+  }
 }
 
 /* modificação dos links */
@@ -153,14 +125,6 @@ a:hover {
   padding: 0px;
 }
 
-@media  (min-width: 1200px){
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .sobre h2,
 .portfolio h2{
   font-family: 'Montserrat', sans-serif;
@@ -189,6 +153,14 @@ a:hover {
     margin-bottom: 70px  ;
   }
 }
+
+@media (min-width: 1000px){
+  .grid{
+  grid-template-columns: repeat(3, 260px);
+  gap: 10em;
+}
+}
+
 .sobre p{
   margin-bottom: 10px;
   text-indent: 1em;
