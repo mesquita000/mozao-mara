@@ -8,7 +8,6 @@
 
 /* fundo da pagina */
 body {
-  background:	linear-gradient(gray,white);
   background-size: auto 100vh; 
   font-family: 'Source Code Pro', monospace;
   height: 100vh;
@@ -16,7 +15,13 @@ body {
 }
 
 .home{
-  background-image: url('../img/primeira_flor1.jpg');
+  background-image: url(../img/primeira_flor1.jpg);
+}
+
+@media (min-width: 700px){
+  .home{
+    background-color: gray;
+  }
 }
 
 /* definindo o tamanho minimo para ser carregado de tela */
@@ -25,6 +30,7 @@ body {
   body{
     font-size: 14px;
   }
+  
 }
 
 @media (min-width: 600px){
@@ -141,8 +147,10 @@ a:hover {
 }
 
 .portfolio{
+  background:	linear-gradient(white,gray);
   padding: 2em;
-  min-height: 50vh;
+  min-height: 10vh;
+  padding: 0px;
 }
 
 @media  (min-width: 1200px){
@@ -157,8 +165,9 @@ a:hover {
 .portfolio h2{
   font-family: 'Montserrat', sans-serif;
   line-height: 1.8em;
-  color: whitesmoke;
+  color: black;
   font-size: 2em;
+  padding-left: 10px;
 }
 
 /* deixando as imagens mais organizadas em colunas */
@@ -173,6 +182,7 @@ a:hover {
     grid-template-columns: repeat(2, 130px);
     justify-content: center;
     gap: 2em;
+    padding-bottom: 20px;
   }
   .flip-card{
     padding-bottom: 90px;
